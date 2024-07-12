@@ -1,797 +1,583 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Paiva - Portfolio Profissional</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/avatar-diego-pc.webp" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qk6Sv7s_z-kzYtHiCVe1-9lr6BCjC1-II9k5V7Lt3c4" />
+    <title>Portfólio | Diego Paiva - Desenvolvedor Full Stack</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/modal.js"></script>
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-diego.webp" alt="Diego Paiva" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Diego Paiva">Diego Paiva</h1>
-
-          <p class="title">Analista / Desenvolvedor</p>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <i class="ri-menu-line"></i>
+                <i class="ri-close-line hidden"></i>
+            </div>
+            <a href="#sobre">
+                <h2>Portfólio</h2>
+            </a>
+            <div class="toggle">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class="box"></div>
+                </label>
+            </div>
         </div>
+    </header>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Contatos</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+    <section id="sobre" class="js-section">
+        <div class="container">
+            <div class="banner">
+                <div class="intro">
+                    <div class="title">
+                        <h1></h1>
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="actions">
+                        <a href="assets/cv/cv-diegopaiva.pdf" download>Download CV</a>
+                        <a href="mailto:www.diegopaiva@gmail.com" target="_blank">Entrar em contato</a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="assets/avatar3.png" alt="avatar">
+                </div>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:www.diegopaiva@gmail.com" class="contact-link">www.diegopaiva@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Fone/WhatsApp</p>
-
-              <a href="https://api.whatsapp.com/send/?phone=5561982323152&text&type=phone_number&app_absent=0"
-                class="contact-link">+55 (61) 98232-3152</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Nascimento</p>
-
-              <time datetime="1982-06-23">Dezembro 08, 1992</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Endereço</p>
-
-              <address>Brasília, Distrito Federal, BRA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/DiiegoPaiiva" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/diiegopaiiva/" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/diihpaiiva" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/diihpaiiva/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/diiegopaiiva/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Sobre</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Currículo</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contato</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #SOBRE
-      -->
-
-      <article class="about  active" data-page="sobre">
-
-        <header>
-          <h2 class="h2 article-title">Sobre mim</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Sou Analista e Desenvolvedor de Sistemas em Brasília/DF, Brasil, atuando no desenvolvimento web e
-            desenvolvimento de sistemas.
-            Gosto de transformar desafios complexos em soluções simples, belas e intuitivas.
-          </p>
-
-          <p>
-            Minha função é construir seu site para que seja funcional e amigável, ao mesmo tempo atraente.
-            Além disso, adiciono um toque pessoal ao seu produto e garanto que seja cativante e fácil de usar.
-            Meu objetivo é transmitir sua mensagem e identidade da maneira mais criativa possível.
-          </p>
-        </section>
-
-
-        <!--
-          - serviço
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">O que eu faço</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-devsis.png" alt="coding icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desenvolvimento de Software</h4>
-
-                <p class="service-item-text">
-                  Desenvolvimento profissional de software, criando soluções eficientes e de alta qualidade.
+            <div class="about">
+                <h2>Sobre mim</h2>
+                <p class="justificar">
+                    31 anos, Bacharel em Análise e Desenvolvimento de Sistemas. <br>
+                    Sou um desenvolvedor full stack apaixonado por criar soluções inovadoras e eficientes. Tenho
+                    experiência em várias tecnologias, incluindo HTML, CSS e JavaScript para desenvolvimento front-end,
+                    além de frameworks como React e Angular. No lado do back-end, trabalho com Node.js, Express e bancos
+                    de dados como MongoDB e MySQL. <br>
+                    Minhas habilidades me permitem construir aplicações completas, desde a interface do usuário até a
+                    lógica do servidor. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas
+                    habilidades, focando na entrega de experiências de usuário excepcionais e na otimização de
+                    processos.
                 </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desenvolvimento Web</h4>
-
-                <p class="service-item-text">
-                  Criação de sites e aplicações web de alto desempenho e qualidade profissional.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Aplicativos Móveis</h4>
-
-                <p class="service-item-text">
-                  Desenvolvimento de aplicativos para dispositivos móveis, incluindo iOS e Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-database.png" alt="database icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Banco de Dados</h4>
-
-                <p class="service-item-text">
-                  Projetar e implementar sistemas de gerenciamento de database para armazenar dados de forma eficiente.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
+            </div>
         </div>
+    </section>
+    <section id="skills" class="js-section">
+        <div class="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="cards">
+                    <div class="box">
+                        <p>HTML5</p>
+                        <img src="assets/languages/html.svg" alt="html">
+                    </div>
+                    <div class="box">
+                        <p>CSS3</p>
+                        <img src="assets/languages/css.svg" alt="css">
+                    </div>
+                    <div class="box">
+                        <p>JavaScript</p>
+                        <img src="assets/languages/javascrip.svg" alt="javascript">
+                    </div>
+                    <div class="box">
+                        <p>React</p>
+                        <img src="assets/languages/react.svg" alt="react">
+                    </div>
+                    <div class="box">
+                        <p>Node</p>
+                        <img src="assets/languages/node.svg" alt="node">
+                    </div>
+                    <div class="box">
+                        <p>Git</p>
+                        <img src="assets/languages/git.svg" alt="node">
+                    </div>
+                    <div class="box">
+                        <p>GitHub</p>
+                        <img src="assets/languages/github.svg" alt="node">
+                    </div>
+                    <div class="box">
+                        <p>SQL</p>
+                        <img src="assets/languages/sql.svg" alt="node">
+                    </div>
+                    <div class="box">
+                        <p>MongoDB</p>
+                        <img src="assets/languages/mongodb.png" alt="node">
+                    </div>
+                    <div class="box">
+                        <p>BootStrap</p>
+                        <img src="assets/languages/bootstrap.svg" alt="sass">
+                    </div>
 
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="Currículo">
-
-        <header>
-          <h2 class="h2 article-title">Currículo</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+                </div>
             </div>
-
-            <h3 class="h3">Graduação</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Centro Universitário IESB</h4>
-
-              <span>Análise e Desenvolvimento de Sistemas</span>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                Como academico de ADS, aprendi a programar em diversas linguagens, compreendo algoritmos, estruturas de
-                dados e desenvolvo habilidades em áreas como desenvolvimento web, desktop e móvel. Além disso, adquiro
-                conhecimentos em banco de dados, redes, segurança da informação, inteligência artificial e trabalho em
-                equipe. Este conjunto de habilidades não apenas me prepara academicamente, mas também me posiciona de
-                maneira competitiva no mercado de trabalho, onde posso atuar como desenvolvedor e analista de sistemas,
-                respondendo às demandas crescentes por profissionais qualificados na área de tecnologia da informação.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Centro Brasileiro de Cursos</h4>
-
-              <span>Técnico em Manutenção e Suporte em Informática</span>
-
-              <span>2013 — 2014</span>
-
-              <p class="timeline-text">
-                Como estudande de Manutenção e Suporte em Informática, desenvolvi habilidades especializadas na
-                identificação e resolução de problemas relacionados a hardware e software. Minha formação inclui
-                conhecimentos práticos em manutenção de equipamentos de informática, diagnóstico de falhas e prestação
-                de suporte técnico eficiente. Além de lidar com questões de hardware, também estou apto a oferecer
-                assistência em sistemas operacionais, redes e segurança da informação. Meu papel envolve garantir o
-                funcionamento suave dos sistemas de computadores, atendendo às necessidades dos usuários finais e
-                contribuindo para a eficiência geral dos ambientes de tecnologia da informação.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        </div>
+    </section>
+    <section id="projects" class="js-section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="highlights">
+                <h3>Destaques</h3>
+                <div class="cards-projects">
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/reciclapp.jpeg" alt="reciclapp">
+                            <div class="details">
+                                <p>ReciclApp</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/react.svg" alt="react">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>24 de Fevereiro de 2023</p>
+                            <a href="https://github.com/diiegopaiiva/reciclapp" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/med-plus.jpg" alt="dailyweather">
+                            <div class="details">
+                                <p>Med +</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/node.svg" alt="node">
+                                    <img src="assets/mini-languages/sql.svg" alt="sql">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/mongodb.png" alt="mongodb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>28 de Fevereiro de 2024</p>
+                            <a href="https://github.com/diiegopaiiva/med-plus" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/calculadora.jpg" alt="clone calculadora">
+                            <div class="details">
+                                <p>Calculadora do Windows 10</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>14 de Outubro de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <h3 class="h3">Experiência</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Suporte de TI</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                A empresa G&E presta serviços terceirizados para empresas privadas e órgãos governamentais. Um deles é a
-                Advocacia-Geral da União para qual eu fui designado a prestar suporte e apoio de TI. Tendo como
-                responsabilidade identificação de dificuldades e solução de incidentes e problemas de hardware e
-                software, envolvendo a montagem, reparo e configuração de equipamentos no DTI (Departamento de
-                Tecnologia da Informação). Aplico treinamento aos usuários na utilização de sistemas.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Auxiliar Técnico em Informática</h4>
-
-              <span>2018 — 2022</span>
-
-              <p class="timeline-text">
-                A empresa Real JG presta serviços terceirizados para empresas privadas e órgãos governamentais. Um deles
-                é a Advocacia-Geral da União para qual eu fui designado a prestar suporte e apoio de TI. Tendo como
-                responsabilidade identificação de dificuldades e solução de incidentes e problemas de hardware e
-                software, envolvendo a montagem, reparo e configuração de equipamentos no DTI (Departamento de
-                Tecnologia da Informação). Aplico treinamento aos usuários na utilização de sistemas.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Minhas habilidades</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Programação</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Desenvolvimento Web</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Banco de Dados</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Arquitetura de Software</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Sistemas Operacionais</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Desenvolvimento Mobile</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Controle de Versão</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Metodologias Ágeis</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CI/CD</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Resolução de Problemas</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Compreensão de Negócios</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Segurança da Informação</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          
-          <div class="filter-select-box">
-
-            <button  data-select></button>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/DiiegoPaiiva/reciclapp">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./website-demo-image/reciclapp.jpeg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ReciclApp</h3>
-
-                <p class="project-category">Em Desenvolvimento...</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/DiiegoPaiiva/chatbot">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./website-demo-image/chatbot.jpeg" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Chatbot</h3>
-
-                <p class="project-category">Em Desenvolvimento...</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/DiiegoPaiiva/mywebsite">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./website-demo-image/geekgrove.jpeg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">GeekGrove</h3>
-
-                <p class="project-category">Em Desenvolvimento...</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/DiiegoPaiiva/freelive">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./website-demo-image/freelive.jpeg" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">FreeLive</h3>
-
-                <p class="project-category">Em Desenvolvimento...</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/DiiegoPaiiva/pokehub">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./website-demo-image/pokehub.jpeg" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PokeHub</h3>
-
-                <p class="project-category">Em Desenvolvimento...</p>
-
-              </a>
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="Contato">
-
-        <header>
-          <h2 class="h2 article-title">Contato</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245795.98208165535!2d-48.102170880748304!3d-15.721369806608013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18df9ae275%3A0x738470e469754a24!2zQnJhc8OtbGlhLCBERg!5e0!3m2!1spt-BR!2sbr!4v1702504422294!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Formulário para contato</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Nome completo" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Endereço de email" required data-form-input>
+            <!-- <div class="allprojects">
+                <h3>Todos os projetos</h3>
+                <div class="cards-projects">
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/deathcat.jpg" alt="grocery store">
+                            <div class="details">
+                                <p>Death Cat Grocery Store</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>28 de Setembro de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/youtube.jpg" alt="youtube clone">
+                            <div class="details">
+                                <p>Youtube Clone</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>23 de Setembro de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/digitalflix.jpg" alt="digital flix">
+                            <div class="details">
+                                <p>Digital Flix</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/sass.svg" alt="sass">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Em desenvolvimento</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/barberhouse.jpg" alt="barber house">
+                            <div class="details">
+                                <p>Barber House</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>30 de Julho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/rocketq.jpg" alt="rocket q">
+                            <div class="details">
+                                <p>Rocket.Q</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>07 de Julho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/naped.jpg" alt="naped">
+                            <div class="details">
+                                <p>Naped</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/sass.svg" alt="sass">
+
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Em desenvolvimento</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/mercadolivre.jpg" alt="clone mercado livre">
+                            <div class="details">
+                                <p>Mercado Livre Clone</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Em desenvolvimento</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/rioturism.jpg" alt="rio turism">
+                            <div class="details">
+                                <p>Rio Turism</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>04 de Setembro de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/cultflix.jpg" alt="cultflix">
+                            <div class="details">
+                                <p>Cultflix</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>30 de Julho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/dashboardstarwars.jpg" alt="dashboard starwars">
+                            <div class="details">
+                                <p>Dashboard Star Wars</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>08 de Julho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/animaisfantasticos.jpg" alt="animais fantasticos">
+                            <div class="details">
+                                <p>Animais Fantásticos</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/sass.svg" alt="sass">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Em desenvolvimento</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/brafe.jpg" alt="brafe">
+                            <div class="details">
+                                <p>Brafé</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>07 de Agosto de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/bikcraft.jpg" alt="bikcraft">
+                            <div class="details">
+                                <p>Bikcraft</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/sass.svg" alt="sass">
+                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
+                                    <img src="assets/mini-languages/figma.svg" alt="figma">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>15 de Junho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/flexbog.jpg" alt="flexblog">
+                            <div class="details">
+                                <p>Flexbog</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>17 de Junho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/lescone.jpg" alt="lescone">
+                            <div class="details">
+                                <p>Le Scone</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/sass.svg" alt="sass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>01 de Outubro de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cover">
+                            <img src="assets/projects/wildbeast.jpg" alt="wildbeast">
+                            <div class="details">
+                                <p>Wildbeast</p>
+                                <div class="mini-languages">
+                                    <img src="assets/mini-languages/html.svg" alt="html">
+                                    <img src="assets/mini-languages/css.svg" alt="css">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>09 de Julho de 2021</p>
+                            <a>Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div> --->
+        </div>
+    </section> 
+    <section id="contacts" class="js-section">
+        <div class="contacts">
+            <div class="container">
+                <h2>Contatos</h2>
+                <div class="icons">
+                    <div class="icon">
+                        <a href="mailto:www.diegopaiva@gmail.com" target="_blank">
+                            <div class="box">
+                                <img src="assets/contacts/mail.svg" alt="e-mail">
+                            </div>
+                        </a>
+                        <a href="mailto:rhuambello@gmail.com" target="_blank">
+                            <p>E-mail</p>
+                        </a>
+                        <a href="mailto:rhuambello@gmail.com" target="_blank">
+                            <p>www.diegopaiva@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://api.whatsapp.com/send?phone=5561982323152" target="_blank">
+                            <div class="box">
+                                <img src="assets/contacts/phone.svg" alt="telefone">
+                            </div>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5521968892704" target="_blank">
+                            <p>Telefone</p>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5521968892704" target="_blank">
+                            <p>(61) 98232-3152</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/diiegopaiiva/" target="_blank">
+                            <div class="box">
+                                <img src="assets/contacts/linkedin.svg" alt="linkedin">
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diiegopaiiva target="_blank">
+                            <p>Linkedin</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diiegopaiiva/" target="_blank">
+                            <p>@diiegopaiiva</p>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/diiegopaiiva" target="_blank">
+                            <div class="box">
+                                <img src="assets/contacts/github.svg" alt="github">
+                            </div>
+                        </a>
+                        <a href="https://github.com/diiegopaiiva" target="_blank">
+                            <p>Github</p>
+                        </a>
+                        <a href="https://github.com/diiegopaiiva" target="_blank">
+                            <p>@diiegopaiiva</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Enviar mensagem</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+        </div>
+    </section>
+    <div class="modal hidden">
+        <div class="top">
+            <div class="video">
+                <iframe src="" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h2></h2>
+                    <i class="ri-close-line"></i>
+                </div>
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+        <div class="links">
+            <a href="" target="_blank" class="link-project">Acessar projeto</a>
+            <a href="" target="_blank" class="link-repository">Acessar repositório</a>
+            <a href="" target="_blank" class="link-linkedin">Ver post no Linkedin</a>
+        </div>
+    </div>
+    <div class="menuOpen hidden">
+        <h2>Bem-vindo ao meu Portfólio :)</h2>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contacts">Contatos</a>
+        </nav>
     </div>
 
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rio de Janeiro",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+          },
+          "name": "Rhuan Bello",
+          "url": "https://rhuanbello.com",
+          "jobTitle": "Desenvolvedor Front-End",
+          "image": "https://i.imgur.com/uKmblf9.png",
+          "description": "Desenvolvedor Front-End e UI Designer. Formado em Sistemas de Informação e Técnico em Software. Cursando Desenvolvimento Full-Stack na Digital House Brasil. HTML5, CSS3, JavaScript, SASS, MySQL, Git e Figma.",
+          "email": "mailto:rhuambello@gmail.com",
+          "telephone": "https://api.whatsapp.com/send?phone=5521968892704",
+        }
+    </script>
 
 </body>
 
